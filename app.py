@@ -9,11 +9,7 @@ from datetime import date
 app = Flask(__name__)
 @app.route("/")
 def hello_world():
-    city = input("Enter city name: ")
-    lookup = pywapi.get_location_ids(city)
-    for i in lookup:
-        location_id = i
-    weather_com_result = pywapi.get_weather_from_weather_com(location_id)
+    weather_com_result = pywapi.get_weather_from_weather_com("USMA0011")
     points = 0
     end = 0
     day = {0:"Monday", 1:"Tuesday", 2:"Wednesday", 3:"Thursday", 4:"Friday", 5:"Saturday", 6:"Sunday"}
