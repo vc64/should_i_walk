@@ -5,14 +5,13 @@ flask
 
 
 # ----------------------
-# Testing
-# ----------------------
-# mock
-
-
-# ----------------------
 # Production Server
 # ----------------------
 gevent
 gunicorn
+
+
+# ----------------------
+# Pywapi weather module
+# ----------------------
 https://launchpad.net/python-weather-api/trunk/0.3.8/+download/pywapi-0.3.8.tar.gz
