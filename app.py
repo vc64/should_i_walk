@@ -68,12 +68,12 @@ def hello_world():
     if end >= 1:
         return "you should not walk!<br/>" + str(dat) + "<br/>temperature: " + str(temp) + "<br/>weather: " + str(weather) + "<br/>precipitation: " + str(precip) + "%" + "<br/>wind: " + str(wind)
     else:
-        if points > 6:
+        if points > 8:
             return "you should walk!<br/>" + str(dat) + "<br/>temperature: " + str(temp) + "<br/>weather: " + str(weather) + "<br/>precipitation: " + str(precip) + "%" + "<br/>wind: " + str(wind) 
-        elif points < 8:
+        elif points < 6:
             return "you should not walk!<br/>" + str(dat) + "<br/>temperature: " + str(temp) + "<br/>weather: " + str(weather) + "<br/>precipitation: " + str(precip) + "%" + "<br/>wind: " + str(wind)
         else:
-           return "you could walk, but you dont really have to. your choice!<br/>" + str(dat) + "<br/>temperature: " + str(temp) + "<br/>weather: " + str(weather) + "<br/>precipitation: " + str(precip) + "%" + "<br/>wind: " + str(wind)
+            return "you could walk, but you dont really have to. your choice!<br/>" + str(dat) + "<br/>temperature: " + str(temp) + "<br/>weather: " + str(weather) + "<br/>precipitation: " + str(precip) + "%" + "<br/>wind: " + str(wind)
     
     
 if __name__ == "__main__":
