@@ -14,4 +14,4 @@ gunicorn
 # ----------------------
 # Pywapi weather module
 # ----------------------
-https://launchpad.net/python-weather-api/trunk/0.3.8/+download/pywapi-0.3.8.tar.gz
+pip install -e git+https://github.com/jtasker/python-weather-api@cf79f478c26dd244e0c90e10d6df91bb4ea8cd5e#egg=pywapi
