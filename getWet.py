@@ -1,6 +1,4 @@
 from flask import Flask
-from bs4 import BeautifulSoup
-import urllib.request as urllib
 import json
 import datetime
 import requests
