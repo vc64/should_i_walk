@@ -40,7 +40,7 @@ def weatherWalk():
 
         details = forecast["weather"][0]["description"]
 
-        return [temp, wind, weather, details, str(today) + '<br/>Temperature: ' + str(temp) + '<br/>Wind Speed: ' + str(wind) + "<br/>Weather: " + weather + "<br/>Details: " + details]
+        return [temp, wind, weather, details, str(today) + '<br/><b>Temperature: </b>' + str(temp) + '<br/><b>Wind Speed: </b>' + str(wind) + "<br/><b>Weather: </b>" + weather + "<br/><b>Details: </b>" + details]
 
     points = 0
     results = getWeather()
@@ -91,8 +91,9 @@ def weatherWalk():
             points -= 1
         else:
             points -= 3
-    elif details == "overcast clouds":
-        points -= 1
+    elif weather == "Clouds":
+        if details == "overcast clouds":
+            points -= 1
     else:
         if details == "mist":
             points -= 2
@@ -100,11 +101,11 @@ def weatherWalk():
             points -= 10
 
     if points >= 5:
-        return "walk<br/>" + report
+        return "<h1>Walk</h1><br/>" + str(points) + "<br/>" + report
     elif points <= -5:
-        return "no walk<br/>" + report
+        return "<h1>Don't Walk</h1><br/>" + str(points) + "<br/>" + report
     else:
-        return "your choice<br/>" + report
+        return "<h1>Your Choice</h1>" + str(points) + "<br/>" + report
 
 
 if __name__ == "__main__":
